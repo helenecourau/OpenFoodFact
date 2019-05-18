@@ -5,34 +5,20 @@ Use OpenFoodFact data to offer alternative products.
 Purpose
 -----------------
 This is a student project for OpenClassroom Python course. 
-L'objectif est de proposer des produits plus sain à la place de produits mauvais pour la santé.
+
 We want to suggest the user healthy products instead of unhealthy food.
 
 Features
 -----------------
-L'utilisateur peut choisir de consulter ses produits substitués ou de remplacer d'autres produits.
-The user choose between view his registered products or subsitate other products.
 
-Les catégories de produits s'affichent.
-The system show categories of products.
-
-L'utilisateur pourra choisir une catégorie de produits.
-The user pick up a category.
-
-Les produits de la catégorie s'affichent.
-The system show the products of the category.
-
-L'utilisateur pourra choisir dans cette catégorie de produit celui qu'il souhaite remplacer.
-The user pick up a product.
-
-Le produit alternatif s'affiche.
-The system show the healthy product to substituate.
-
-L'utilisateur pourra l'enregistrer dans ses produits.
-The user can register the healthy product in his database.
-
-L'utilisateur peut consulter ses produit enregistrés.
-The user can view his registered products.
+*The user can choose between viewing his registered products or substitute other products.
+*The system shows products categories.
+*The user picks up a category.
+*The system shows the products of the category.
+*In the category, the user selects the product he wants to change.
+*The system shows the healthy product to substitute.
+*The user can register the healthy product in his database.
+*The user can view his registered products.
 
 Screenshots
 -----------------
