@@ -1,5 +1,4 @@
 # OpenFoodFact
-=================
 
 Use OpenFoodFact data to offer alternative products.
 
