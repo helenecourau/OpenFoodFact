@@ -1,6 +1,7 @@
 import mysql.connector
+import pwd
 
-cnx = mysql.connector.connect(user='xx', password='xx',
+cnx = mysql.connector.connect(user=pwd.user, password= pwd.password,
                               host='localhost',
                               database='healthy_food')
 
