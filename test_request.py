@@ -1,19 +1,46 @@
 import requests
+import mysql.connector
+
+cnx = mysql.connector.connect(user='root', password='Ln19221418!',
+                              host='localhost',
+                              database='healthy_food')
+
+cursor = cnx.cursor()
  
-object_json = requests.get('https://fr.openfoodfacts.org/categorie/popcorn_sucre.json')
-object_json = object_json.json()
+class Insert:
 
-ma_liste = object_json['products']
-mon_dictionnaire = ma_liste[0]
+	def __init__(self, url):
+		self.url = url
+		self.list_clean = []
 
-for cle, valeur in mon_dictionnaire.items():
-	if cle == 'product_name' or cle == 'nutrition_grades' or cle == 'stores' or cle == 'ingredients' or cle == 'categories':
-		info_product = {
-		"product_name":mon_dictionnaire['product_name'],
-		"nutrition_grades":mon_dictionnaire['nutrition_grades'],
-		"stores":mon_dictionnaire['stores'],
-		"ingredients":mon_dictionnaire['ingredients'],
-		"categories":mon_dictionnaire['categories']
-		}
+	def request(self):
+		global info_product
+		info_product = {}
+		foods = []
+		object_json = requests.get(self.url)
+		object_json = object_json.json()
+		self.list_clean = object_json['products']
+		for key, value in dico.items():
+				if dico.get('stores') and dico.get('categories') and dico.get('product_name') and dico.get('nutrition_grades'):
+					info_product = {
+						"nom":dico['product_name'],
+						"grade":dico['nutrition_grades'],
+						"description":dico['ingredients_text_debug'],
+						"url":dico['url'],
+						}
+					foods.append(info_product)
+					
 
-print(info_product)
+
+'''cnx.commit()
+
+cursor.close()
+cnx.close()'''
+
+'''https://fr.openfoodfacts.org/categorie/sucettes
+https://fr.openfoodfacts.org/categorie/guimauves
+https://fr.openfoodfacts.org/categorie/cookies-au-chocolat
+https://fr.openfoodfacts.org/categorie/assortiments-de-chocolats
+https://fr.openfoodfacts.org/categorie/pizzas-aux-trois-fromages
+https://fr.openfoodfacts.org/categorie/chips-paysannes
+https://fr.openfoodfacts.org/categorie/chips-au-sel-et-vinaigre'''
