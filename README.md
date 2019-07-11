@@ -20,16 +20,19 @@ Features
 * The user can register the healthy product in his database.
 * The user can view his registered products.
 
-Screenshots
------------------
-
 Tech/framework used
 -----------------
 Python 3.7
 MySQL
 [OpenFoodFact API](https://en.wiki.openfoodfacts.org/API)
 
-Installation
+Description
 -----------------
 
-
+* main.py : to launch the programm.
+* loop_class.py : all the interactions between the user and the programm.
+* db_connect_class.py : all the interactions with the databse (insert, select).
+* request_class.py : to request, parse and organize the datas from OpenFoodFact API.
+* request_insert_url_class.py : for each url from OpenFoodFact API, select and insert the data in the database.
+* erase_class.py : reset the database.
+* constants.py : All the constants, select request and sentences for the users are here.
