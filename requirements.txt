@@ -1,0 +1,2 @@
+requests
+MySQLConnector==5.3
