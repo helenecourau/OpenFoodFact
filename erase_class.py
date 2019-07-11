@@ -8,8 +8,10 @@ CNX = mysql.connector.connect(user=pwd.user, password=pwd.password,
 
 CURSOR = CNX.cursor()
 
+
 def erase():
     '''Clear all the database'''
+
     CURSOR.execute("SET FOREIGN_KEY_CHECKS = 0")
     CURSOR.execute("TRUNCATE Category")
     CURSOR.execute("TRUNCATE Product")
