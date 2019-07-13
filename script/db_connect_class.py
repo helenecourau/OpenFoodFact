@@ -1,5 +1,5 @@
 '''This class connects the project to the database'''
-import pwd
+from script import pwd
 
 import mysql.connector
 

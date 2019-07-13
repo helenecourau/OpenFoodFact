@@ -1,8 +1,8 @@
 '''With all the following classes requests and inserts the URL from main'''
 
-import request_class
-import db_connect_class
-import constants
+from script import request_class
+from script import db_connect_class
+from script import constants
 
 
 class Request_insert_url:

@@ -1,8 +1,8 @@
 '''Main file'''
 
-import loop_class
-import db_connect_class
-import constants
+from script import loop_class
+from script import db_connect_class
+from script import constants
 
 MAINLOOP = 0
 while MAINLOOP != 1:

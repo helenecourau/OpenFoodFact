@@ -1,5 +1,5 @@
 '''Used by request_insert_url_class to clear the database'''
-import pwd
+from script import pwd
 import mysql.connector
 
 CNX = mysql.connector.connect(user=pwd.user, password=pwd.password,

@@ -6,7 +6,7 @@ Warning : OpenFoodFact database is a little messy.'''
 import requests
 import re
 
-import constants
+from script import constants
 
 
 class Request:

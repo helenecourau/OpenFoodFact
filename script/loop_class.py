@@ -1,11 +1,11 @@
 '''This file allows the user to interact with the database.'''
 import random
-import pwd
+from script import pwd
 import mysql.connector
 
-import request_insert_url_class
-import erase_class
-import constants
+from script import request_insert_url_class
+from script import erase_class
+from script import constants
 
 CNX = mysql.connector.connect(user=pwd.user, password=pwd.password,
                               host="localhost",
